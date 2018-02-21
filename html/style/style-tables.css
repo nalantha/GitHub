@@ -1,0 +1,183 @@
+div {
+   background: #ffffff;
+   width: 100%;
+   margin: auto;
+   border-radius:5px;
+   padding: 1px 0px 1px 0px;
+}
+div.main {
+   text-align:left;
+}
+div.tabcontent {
+   text-align:left;
+   display:none;
+}
+h3 {
+   font-size:calc(16px+0.5vw);
+   text-align:center;
+}
+h3.sub {
+   padding: 5px 5px 5px 5px;
+   margin: 0px;
+   text-align:left;
+}
+div.main-div{
+   height:87%;
+}
+span.heading {
+   display:inline;
+   font-size:18px;
+}
+table.list {
+   width: 100%;
+   border-collapse: collapse;
+}
+table.list tr:nth-of-type(odd){
+   background: #eee;
+}
+table.list th {
+   background: #486883; 
+   color: white; 
+   font-weight: bold; 
+}
+table.list td, table.list th {
+   text-align: left;
+   padding: 4px;
+   border: 0px solid #ccc;
+}
+div.detail {
+   display:inline-table;
+}
+table.detail {
+   width: 50%;
+   float:left;
+}
+
+table.detail th.text, table.detail td.text {
+   width: 40%;
+   padding-left: 4px;
+}
+table.detail th.textdetail, table.detail td.textdetail {
+   width: 60%;
+   padding-left: 4px;
+}
+
+table.reports {
+   width: 100%;
+   border: 1px solid #ccc;
+}
+/*table.reports td {
+   width: 50%;
+}*/
+span.reports {
+   display:block;
+   padding: 4px;
+}
+textarea.reports {
+   width:95%;
+   height: 75px;
+   resize :none;
+}
+button {
+   cursor: pointer;
+}
+button.topbutton{
+   width:150px;
+   border-radius:5px;
+   margin: 1%;
+   padding: 1%;
+   background:#6699cc;
+   font-size:calc(12px+0.5vw);
+   color: white;
+   border: none;
+}
+button.button, input.button{
+   width:70px;
+   border-radius:5px;
+   margin: 1%;
+   padding: 2px;
+}
+input{
+   width:96%;
+}
+select {
+    width: 97%;
+}
+ul.servicelist, ul.reports{
+   text-align:left;
+   width:95%;
+   height:75px;
+   border: 1px solid;
+   float:left;
+   list-style-type: none;
+   overflow:auto;
+   padding: 0px 5px 0px 2px;
+   margin: auto;
+}
+
+@media screen and (max-width:600px){
+	
+ 	/* Force table to not be like tables anymore */
+   	table.list, table.list thead, table.list tbody, 
+        table.list th, table.list td, table.list tr { 
+		display: block;
+                padding:1px; 
+   	}
+		
+	/* Hide table headers */
+	table.list thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+		
+	table.list tr { 
+                border: 1px solid #ccc;
+        }
+		
+	table.list td{ 
+		/* Behave  like a "row" */
+		border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding: 1px 0 0 0;
+		padding-left: 40%;
+	}
+		
+	table.list td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		/*top: 6px;*/
+		left: 6px;
+		width: 40%; 
+		padding: 0px; 
+		white-space: nowrap;
+	}
+        table.detail {
+             width: 100%;
+        }
+        span.heading, span.reports {
+             display: block;
+             text-align: center;
+        }
+
+        table.reports, table.reports thead, table.reports tbody,
+        table.reports th, table.reports td, table.reports tr {
+                display: block;
+                padding:1px;
+        }
+        table.reports td{
+                /* Behave  like a "row" */
+                border: 0px solid black;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding: 1px 0 0 0;
+                text-align: center;
+        }
+        ul.reports {
+                float: initial;
+        }
+
+}
+	

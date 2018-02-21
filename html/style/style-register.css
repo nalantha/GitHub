@@ -1,0 +1,137 @@
+body {
+   background-color: #6699CC;
+   color: black;
+   text-align: center;
+   font-size:calc(12px + 0.5vw);
+}
+
+div.table {
+   background: #ffffff;
+   max-width:1000px;
+   min-width:400px;
+   width: 95%;
+   margin: auto;
+   border-radius:5px;
+   text-align:center;
+   border-radius:5px;
+   padding: 1px 0px 1px 0px;
+}
+
+h3 {
+   font-size:calc(16px+0.5vw);
+   text-align:center;
+}
+
+img {
+   display: block;
+   width: 35%;
+   max-width:350px;
+   margin: auto;
+}
+table.register {
+   background:#FFFFFF;
+   width:90%;
+   border-spacing: initial;
+   margin: Auto;
+   word-break: break-word;
+   table-layout: auto;
+   line-height:1.0em;
+   color:#333;
+}
+table.register td.input {
+   padding: 5px 10px 5px 20px;
+   text-align: left;
+   width: 100%;
+   font-size:calc(10px + 0.5vw);
+}
+table.register td.text {
+   text-align: left;
+   padding: 5px 10px 5px 25px;
+   width: 30%;
+}
+
+table.register td.heading {
+   text-align: center;
+   padding: 20px 20px 5px 25px;
+}
+
+.button {
+   min-width: 70px;
+   border-radius:5px;
+   margin-left: auto ;
+   margin-right: auto ;
+   margin-top: 2%;
+   padding: 0.5%;
+   background:#6699cc;
+   font-size:calc(12px+0.5vw);
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+input, select, textarea {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -ms-box-sizing:content-box;
+   box-sizing: border-box;
+}
+input.MediumBox {
+   width: 49%;
+}
+input.SmallBox {
+   width: 25%;
+}
+
+input.RegInputBox {
+   width: 75%;
+}
+input.date {
+   width:75%;
+}
+input.checkbox {
+   width: 25px
+}
+select {
+   width: 75%;
+}
+select.SmallBox {
+   width: 25%;
+}
+span.error {
+   color: #FF0000;
+   font-size:calc(10px+0.5vw)
+}
+textarea {
+   width:75%;
+   resize:none;
+}
+ul.servicelist {
+   text-align:left;
+   width:75%;
+   height:75px;
+   border: 0.5px solid;
+   float:left;
+   list-style-type: none;
+   overflow:auto;
+   padding: 0px 5px 0px 2px;
+   margin: auto;
+}
+ul.servicelist li:after {
+   content: "\2718";
+   float: right;
+}
+ul.servicelist li.hidden:after {
+   display:none;
+}
+ul.servicelist li{
+   font-size:calc(10px + 0.5vw);
+}
+ul.servicelist li:nth-of-type(odd){
+   background: #eee;
+}
+ul.imagelist {
+   text-align:left;
+   float:left;
+   list-style-type: none;
+   padding: 0px 5px 0px 2px;
+   margin: auto;
+}
